@@ -1,0 +1,239 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: android;
+    src: url(fontes/idroid.otf)format(truetype);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Bebas;
+    src: url(Bebas_Neue/BebasNeue-Regular.ttf)format(truetype);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: dosis;
+    src: url(Dosis/Dosis-VariableFont_wght.ttf)format(truetype);
+    font-weight: normal;
+    font-style: normal;
+}
+:root {
+    --fonte-bebas:'bebas';
+    --fonte-dosis: 'dosis';
+    --fonte-android: 'android';
+
+    --cor0: #006400;
+    --cor1: #2D382E;
+    --cor2: #00eb1b;
+    --cor3: #000000;
+    --cor4: #ffffff;
+    --cor5: #0080003e;
+    --cor6: #1c8728;
+}
+
+* {
+    margin: 0px;
+    padding:0px;
+}
+
+body {
+    background-color: var(--cor1);
+    text-overflow: clip;
+}
+
+header {
+    background-image: linear-gradient(-45deg, #7bc984, #0000007a);
+}
+
+header > h1  {
+    color: #ffffff;
+    text-align: center;
+    font: normal normal 40px 'bebas', arial, sans-serif;
+    padding: 30px 10px 10px 10px;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.347);
+} 
+
+header > p  {
+    color: rgb(222, 221, 221);
+    text-align: center;
+    font: normal normal 20px 'dosis', arial, verdana;
+    padding:0px 0px 30px 0px;
+    text-shadow:2px 2px 3px rgba(0, 0, 0, 0.362) ;
+}
+
+nav {
+    width: 316px;
+    padding: 10px;
+    font: normal normal 15px 'bebas', arial, sans-serif;
+}
+
+div {
+   display: inline; 
+   font:normal bold 13px 'work sans', sans-serif, verdana;
+   padding: 6px;
+   transition-duration: 1s;
+}
+
+div:hover {
+    background-color: #ffffff3e;
+    border-radius: 5px;
+}
+
+div > a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    min-width: 320px;
+    max-width: 1000px;
+    margin: auto;
+    background-color: white;
+    padding: 30px 20px 10px 20px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 
+    10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.434);
+    margin-bottom: 30px;
+    text-align: justify;
+    
+}
+
+article > h1 {
+    font:normal normal 22px 'android', monospace, arial;
+    color: #006400;
+    padding: 5px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 2em;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.377);
+}
+
+article > p {
+    text-indent: 30px;
+    font: normal normal 18px 'dosis';
+    padding: 10px 0px 30px 0px;
+    line-height: 2;
+}
+
+article > h2 {
+    font:normal normal 20px 'android', monospace, arial;
+    color: #0a3a0a;
+    background-image: linear-gradient(to left, white, rgb(86, 173, 86));
+    padding: 5px;
+    border-radius: 10px;
+    margin: 0px 0px 20px 0px;
+}
+
+.link {
+    color: var(--cor0);
+    text-decoration: none;
+    font-weight: bolder;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.442);
+}
+
+.link::after {
+    content: '\00a0\1F517';
+}
+
+.link:hover {
+    background-color: var(--cor0);
+    color: white;
+    padding: 5px;
+}
+
+img {
+    padding: 5px 0px;
+    width: 100%;
+}
+
+img#bug {
+    max-width: 350px;
+    display: block;
+    margin: auto;
+}
+
+iframe.aparte {
+    display: block;
+    position: relative;
+    margin: auto;
+    width: 89%;
+    height: 500px;
+    background-color: var(--cor0);
+    padding: 15px 20px 15px 20px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+aside {
+    display: block;
+    margin: auto;
+    background-color: rgb(194, 241, 194);
+    border-radius: 10px;
+    border: 5px solid rgba(0, 0, 0, 0.677);
+}
+
+aside > h3  {
+    background-color: rgb(75, 118, 75);
+    color: rgb(255, 255, 255);
+    padding: 5px;
+    font-family: var(--fonte-bebas);
+    margin: auto;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    letter-spacing: 2px;
+}
+
+aside > p {
+    letter-spacing: 1px;
+    font-size: 17px;
+    font-weight: bolder;
+    text-align: justify;
+    text-indent: 30px;
+    line-height: 1.8;
+    font-family: var(--fonte-dosis);
+    padding: 10px 30px 10px 30px;
+}
+
+aside > ul {
+    list-style-position: inside;
+    list-style-type: '\2705\00A0';
+    padding: 10px 0px 10px 55px;
+    font-family: var(--fonte-dosis);
+    font-weight: bolder;
+    letter-spacing: 2px;
+    columns: 2;
+    line-height: 1.5;
+}
+
+#ap {
+    text-indent: 30px;
+    font: normal normal 18px 'dosis';
+    padding: 10px 0px 0px 0px;
+    line-height: 2;
+}
+
+footer {
+    text-align: center;
+    background-color: var(--cor0);
+    padding: 10px;
+    color: white;
+}
+
+#lina {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.442);
+}
+
+#lina:hover {
+    background-color: white;
+    color: black;
+    padding: 5px;
+    
+}
+
