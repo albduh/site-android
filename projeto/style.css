@@ -201,7 +201,7 @@ aside > p {
 aside > ul {
     list-style-position: inside;
     list-style-type: '\2705\00A0';
-    padding: 10px 0px 10px 0px;
+    padding: 10px 0px 10px 55px;
     font-family: var(--fonte-dosis);
     font-weight: bolder;
     letter-spacing: 2px;
